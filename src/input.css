@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-main{
+        @apply w-full bg-green-500 shadow-lg py-4 px-2 ;
+    }
+    .container-div{
+        @apply container sm:mx-auto ;
+    }
+
+    .menu-items{
+        @apply text-gray-900 text-lg hover:text-white transition duration-300 font-semibold px-2 ;
+    }
+    .mobile-menu{
+        @apply text-gray-900 text-lg hover:text-white transition duration-300 font-semibold  block;
+    }
+    .btn-banner{
+        @apply text-xl text-black font-semibold border border-white px-4 py-2 hover:border-black hover:text-white transition duration-500;
+    }
+    .btn-about{
+        @apply bg-green-500 hover:bg-green-900 text-gray-50 font-bold py-2 px-4 rounded inline-flex items-center mt-4;
+    }
+    .about-contain{
+        @apply flex justify-items-center items-center;
+    }
+    .heading{
+        @apply text-center text-green-500 text-3xl font-bold mt-3 mb-1;
+    }
+    .grid-card{
+        @apply grid sm:grid-cols-2 md:grid-cols-3 gap-4; 
+
+    }
+    .service-card{
+        @apply bg-gray-800 p-7 rounded hover:bg-gray-900 ;
+    }
+    .service-card-head{
+        @apply text-green-500 text-center font-bold text-xl mb-2 sm:mb-2;
+    }
+    .pogress-style{
+        @apply  text-sm font-medium text-blue-100 text-center p-1 leading-none rounded-l-full;
+    }
+    .pogress-heading{
+        @apply text-green-500  font-bold mb-1 text-[20px];
+    }
+    .team-content{
+        @apply bg-gray-800 p-7  drop-shadow-lg rounded  hover:bg-gray-900 ;
+    }
+
+}
